@@ -316,8 +316,8 @@ cursor: pointer;
 		  .attr("class", "g")
 		  .attr("data-pos", function(d){ return d.pos })
 		  .attr("transform", function(d) { return "translate(" + x(d.LABO) + ",0)"; })
-		  .on("mouseover",function(d,i){ PieOnTheFly(d,i,this); })
-		  .on("mouseout",function(d,i){ /*	  var g = svg.selectAll("#pie").selectAll(".arc") */ })
+		  .on("mouseover",function(d,i){  PieOnTheFly(d,i,this);  })
+		 // .on("mouseout",function(d,i){ })
 
 	   
 		LABO.selectAll("rect")	
@@ -481,10 +481,7 @@ cursor: pointer;
 	
 	function StackBars_DetailInfo(d,i,parent){
 
-	 g = svg.selectAll(".arc")
-		.data(pie(mydata))
-		.enter().append("g");
-		
+
 		svg.select("#SB_spec") // affichage specialité
 			.text(d3.select(parent.parentNode.appendChild(parent)).attr('data-spe'));
 		
