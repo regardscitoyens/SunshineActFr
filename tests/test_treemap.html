@@ -52,7 +52,7 @@ form {
       .style("left", margin.left + "px")
       .style("top", margin.top + "px");
 
-  d3.json("/data/sunshine.origin-labo.json", function(error, data) {
+  d3.json("../data/sunshine.origin-labo.json", function(error, data) {
     var root = {
       key: 'sunshine',
       values: sunshine.nestData(['ORIGIN', 'LABO'], 'DECL_AVANT_MONTANT', data)
