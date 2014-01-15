@@ -619,15 +619,15 @@
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 91.0, 
-    "LABO": "3M France", 
-    "DECL_AVANT_MONTANT": 7231.0
+    "DECL_AVANT_COUNT": 23.0, 
+    "LABO": "3M FRANCE", 
+    "DECL_AVANT_MONTANT": 3190.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 23.0, 
-    "LABO": "3M+FRANCE", 
-    "DECL_AVANT_MONTANT": 3190.0
+    "DECL_AVANT_COUNT": 91.0, 
+    "LABO": "3M France", 
+    "DECL_AVANT_MONTANT": 7231.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
@@ -650,7 +650,7 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 1257.0, 
-    "LABO": "ABBOTT+FRANCE", 
+    "LABO": "ABBOTT FRANCE", 
     "DECL_AVANT_MONTANT": 42199.517932419942
   }, 
   {
@@ -661,63 +661,39 @@
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 80.0, 
+    "DECL_AVANT_COUNT": 196.0, 
     "LABO": "ABS-BOLTON MEDICAL", 
-    "DECL_AVANT_MONTANT": 24348.0
+    "DECL_AVANT_MONTANT": 51530.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 116.0, 
-    "LABO": "ABS-BOLTON+MEDICAL", 
-    "DECL_AVANT_MONTANT": 27182.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 4078.0, 
+    "DECL_AVANT_COUNT": 5188.0, 
     "LABO": "ACTELION PHARMACEUTICALS FRANCE", 
-    "DECL_AVANT_MONTANT": 545838.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 1110.0, 
-    "LABO": "ACTELION+PHARMACEUTICALS+FRANCE", 
-    "DECL_AVANT_MONTANT": 155352.0
+    "DECL_AVANT_MONTANT": 701190.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 71.0, 
-    "LABO": "ADDMEDICA+SAS", 
+    "LABO": "ADDMEDICA SAS", 
     "DECL_AVANT_MONTANT": 7025.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 95.0, 
-    "LABO": "AGFA+HEALTHCARE+France", 
+    "LABO": "AGFA HEALTHCARE France", 
     "DECL_AVANT_MONTANT": 13481.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 2.0, 
+    "DECL_AVANT_COUNT": 4.0, 
     "LABO": "ALERE SAS", 
-    "DECL_AVANT_MONTANT": 128.0
+    "DECL_AVANT_MONTANT": 256.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 2.0, 
-    "LABO": "ALERE+SAS", 
-    "DECL_AVANT_MONTANT": 128.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 2402.0, 
+    "DECL_AVANT_COUNT": 3697.0, 
     "LABO": "ALFA WASSERMANN PHARMA", 
-    "DECL_AVANT_MONTANT": 86251.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 1295.0, 
-    "LABO": "ALFA+WASSERMANN+PHARMA", 
-    "DECL_AVANT_MONTANT": 39827.0
+    "DECL_AVANT_MONTANT": 126078.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
@@ -734,19 +710,19 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 550.0, 
-    "LABO": "AMERICAN+MEDICAL+SYSTEMS+France", 
+    "LABO": "AMERICAN MEDICAL SYSTEMS France", 
     "DECL_AVANT_MONTANT": 135897.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 15011.0, 
-    "LABO": "AMGEN+SAS", 
+    "LABO": "AMGEN SAS", 
     "DECL_AVANT_MONTANT": 1916064.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 1389.0, 
-    "LABO": "AMO+FRANCE+SAS", 
+    "LABO": "AMO FRANCE SAS", 
     "DECL_AVANT_MONTANT": 109221.0
   }, 
   {
@@ -758,13 +734,13 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 39.0, 
-    "LABO": "APPAREILLAGE+ET+MATERIEL+DE+CARDIOLOGIE+SAS", 
+    "LABO": "APPAREILLAGE ET MATERIEL DE CARDIOLOGIE SAS", 
     "DECL_AVANT_MONTANT": 1091.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 1511.0, 
-    "LABO": "ARCHIMEDES+PHARMA+FRANCE+SAS", 
+    "LABO": "ARCHIMEDES PHARMA FRANCE SAS", 
     "DECL_AVANT_MONTANT": 77121.0
   }, 
   {
@@ -782,13 +758,13 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 53.0, 
-    "LABO": "ARIAD+Pharmaceuticals+France+SARL", 
+    "LABO": "ARIAD Pharmaceuticals France SARL", 
     "DECL_AVANT_MONTANT": 22537.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 534.0, 
-    "LABO": "ARTHREX+SAS", 
+    "LABO": "ARTHREX SAS", 
     "DECL_AVANT_MONTANT": 160994.0
   }, 
   {
@@ -799,20 +775,14 @@
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 531.0, 
+    "DECL_AVANT_COUNT": 741.0, 
     "LABO": "ASTON MEDICAL", 
-    "DECL_AVANT_MONTANT": 76672.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 210.0, 
-    "LABO": "ASTON+MEDICAL", 
-    "DECL_AVANT_MONTANT": 20560.0
+    "DECL_AVANT_MONTANT": 97232.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 225.0, 
-    "LABO": "ATOS+MEDICAL", 
+    "LABO": "ATOS MEDICAL", 
     "DECL_AVANT_MONTANT": 18965.0
   }, 
   {
@@ -824,13 +794,13 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 93.0, 
-    "LABO": "AUDIKA+HARDOUIN", 
+    "LABO": "AUDIKA HARDOUIN", 
     "DECL_AVANT_MONTANT": 152994.78
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 927.0, 
-    "LABO": "AUDITION+SANTE", 
+    "LABO": "AUDITION SANTE", 
     "DECL_AVANT_MONTANT": 74943.0
   }, 
   {
@@ -866,13 +836,13 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 296.0, 
-    "LABO": "B.+Braun+Avitum+France", 
+    "LABO": "B. Braun Avitum France", 
     "DECL_AVANT_MONTANT": 49873.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 689.0, 
-    "LABO": "B.BRAUN+MEDICAL+SAS", 
+    "LABO": "B.BRAUN MEDICAL SAS", 
     "DECL_AVANT_MONTANT": 130756.0
   }, 
   {
@@ -883,44 +853,38 @@
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 48.0, 
+    "DECL_AVANT_COUNT": 97.0, 
     "LABO": "BALT INTERNATIONAL", 
-    "DECL_AVANT_MONTANT": 1268.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 49.0, 
-    "LABO": "BALT+INTERNATIONAL", 
-    "DECL_AVANT_MONTANT": 1288.0
+    "DECL_AVANT_MONTANT": 2556.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 6073.0, 
-    "LABO": "BARD+FRANCE+SAS", 
+    "LABO": "BARD FRANCE SAS", 
     "DECL_AVANT_MONTANT": 1320290.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 1015.0, 
-    "LABO": "BAUSCH+++LOMB", 
+    "LABO": "BAUSCH   LOMB", 
     "DECL_AVANT_MONTANT": 134935.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 1296.0, 
-    "LABO": "BAYER+SANTE", 
+    "LABO": "BAYER SANTE", 
     "DECL_AVANT_MONTANT": 3343445.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 767.0, 
-    "LABO": "BAYER+SANTE+FAMILIALE", 
+    "LABO": "BAYER SANTE FAMILIALE", 
     "DECL_AVANT_MONTANT": 30140.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 169.0, 
-    "LABO": "BECTON+DICKINSON+France+SAS", 
+    "LABO": "BECTON DICKINSON France SAS", 
     "DECL_AVANT_MONTANT": 21396.0
   }, 
   {
@@ -931,15 +895,9 @@
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 11068.0, 
+    "DECL_AVANT_COUNT": 23059.0, 
     "LABO": "BIOGEN IDEC FRANCE", 
-    "DECL_AVANT_MONTANT": 1353640.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 11991.0, 
-    "LABO": "BIOGEN+IDEC+FRANCE", 
-    "DECL_AVANT_MONTANT": 1419877.0
+    "DECL_AVANT_MONTANT": 2773517.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
@@ -980,19 +938,19 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 36522.0, 
-    "LABO": "BOEHRINGER+INGELHEIM+France", 
+    "LABO": "BOEHRINGER INGELHEIM France", 
     "DECL_AVANT_MONTANT": 3423424.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 126.0, 
-    "LABO": "BRAHMS+FRANCE+SAS", 
+    "LABO": "BRAHMS FRANCE SAS", 
     "DECL_AVANT_MONTANT": 12757.364
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 20478.0, 
-    "LABO": "BRISTOL-MEYERS+SQUIBB", 
+    "LABO": "BRISTOL-MEYERS SQUIBB", 
     "DECL_AVANT_MONTANT": 750511.0
   }, 
   {
@@ -1004,7 +962,7 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 1547.0, 
-    "LABO": "Boston+Scientific+SAS", 
+    "LABO": "Boston Scientific SAS", 
     "DECL_AVANT_MONTANT": 530227.0
   }, 
   {
@@ -1015,39 +973,27 @@
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 8.0, 
+    "DECL_AVANT_COUNT": 16.0, 
     "LABO": "CAIR LGL", 
-    "DECL_AVANT_MONTANT": 148.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 8.0, 
-    "LABO": "CAIR+LGL", 
-    "DECL_AVANT_MONTANT": 148.0
+    "DECL_AVANT_MONTANT": 296.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 2.0, 
-    "LABO": "CAREFUSION+309+SAS", 
+    "LABO": "CAREFUSION 309 SAS", 
     "DECL_AVANT_MONTANT": 690.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 1.0, 
-    "LABO": "CARL+ZEISS+MEDITEC", 
+    "LABO": "CARL ZEISS MEDITEC", 
     "DECL_AVANT_MONTANT": 44.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 3523.0, 
+    "DECL_AVANT_COUNT": 7171.0, 
     "LABO": "CELGENE SARL", 
-    "DECL_AVANT_MONTANT": 626359.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 3648.0, 
-    "LABO": "CELGENE+SARL", 
-    "DECL_AVANT_MONTANT": 648252.0
+    "DECL_AVANT_MONTANT": 1274611.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
@@ -1064,20 +1010,14 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 11588.0, 
-    "LABO": "CHIESI+S.A", 
+    "LABO": "CHIESI S.A", 
     "DECL_AVANT_MONTANT": 943650.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 1213.0, 
+    "DECL_AVANT_COUNT": 1788.0, 
     "LABO": "CHUGAI PHARMA FRANCE", 
-    "DECL_AVANT_MONTANT": 156130.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 575.0, 
-    "LABO": "CHUGAI+PHARMA+FRANCE", 
-    "DECL_AVANT_MONTANT": 57318.0
+    "DECL_AVANT_MONTANT": 213448.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
@@ -1106,20 +1046,14 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 9.0, 
-    "LABO": "COLOPLAST+SA", 
+    "LABO": "COLOPLAST SA", 
     "DECL_AVANT_MONTANT": 7110.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 16.0, 
+    "DECL_AVANT_COUNT": 32.0, 
     "LABO": "COOPERATION PHARMACEUTIQUE FRANCAISE", 
-    "DECL_AVANT_MONTANT": 795.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 16.0, 
-    "LABO": "COOPERATION+PHARMACEUTIQUE+FRANCAISE", 
-    "DECL_AVANT_MONTANT": 795.0
+    "DECL_AVANT_MONTANT": 1590.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
@@ -1142,20 +1076,26 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 1259.0, 
-    "LABO": "COSMETIQUE+ACTIVE+FRANCE", 
+    "LABO": "COSMETIQUE ACTIVE FRANCE", 
     "DECL_AVANT_MONTANT": 132399.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 13.0, 
-    "LABO": "COSMETIQUE+ACTIVE+INTERNATIONAL", 
+    "LABO": "COSMETIQUE ACTIVE INTERNATIONAL", 
     "DECL_AVANT_MONTANT": 2665.7999999999997
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 325.0, 
+    "DECL_AVANT_COUNT": 668.0, 
     "LABO": "COUSIN BIOSERV", 
-    "DECL_AVANT_MONTANT": 37558.0
+    "DECL_AVANT_MONTANT": 77087.0
+  }, 
+  {
+    "ORIGIN": "M\u00e9decin", 
+    "DECL_AVANT_COUNT": 10.0, 
+    "LABO": "COUSIN BIOTECH", 
+    "DECL_AVANT_MONTANT": 920.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
@@ -1165,26 +1105,14 @@
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 343.0, 
-    "LABO": "COUSIN+BIOSERV", 
-    "DECL_AVANT_MONTANT": 39529.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 10.0, 
-    "LABO": "COUSIN+BIOTECH", 
-    "DECL_AVANT_MONTANT": 920.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 2938.0, 
-    "LABO": "COVIDIEN+FRANCE+SAS", 
+    "LABO": "COVIDIEN FRANCE SAS", 
     "DECL_AVANT_MONTANT": 178146.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 154.0, 
-    "LABO": "COVIDIEN+IMAGING+France", 
+    "LABO": "COVIDIEN IMAGING France", 
     "DECL_AVANT_MONTANT": 5412.0699999999979
   }, 
   {
@@ -1201,20 +1129,14 @@
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 136.0, 
+    "DECL_AVANT_COUNT": 295.0, 
     "LABO": "DENTSPLY IH", 
-    "DECL_AVANT_MONTANT": 32874.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 159.0, 
-    "LABO": "DENTSPLY+IH", 
-    "DECL_AVANT_MONTANT": 42869.0
+    "DECL_AVANT_MONTANT": 75743.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 87.0, 
-    "LABO": "DIASORIN+S.A", 
+    "LABO": "DIASORIN S.A", 
     "DECL_AVANT_MONTANT": 10886.0
   }, 
   {
@@ -1225,15 +1147,9 @@
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 270.0, 
+    "DECL_AVANT_COUNT": 405.0, 
     "LABO": "DRAGER MEDICAL SAS", 
-    "DECL_AVANT_MONTANT": 51838.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 135.0, 
-    "LABO": "DRAGER+MEDICAL+SAS", 
-    "DECL_AVANT_MONTANT": 28828.0
+    "DECL_AVANT_MONTANT": 80666.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
@@ -1243,15 +1159,15 @@
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 163.0, 
-    "LABO": "EDAP TMS France", 
-    "DECL_AVANT_MONTANT": 32471.0
+    "DECL_AVANT_COUNT": 172.0, 
+    "LABO": "EDAP TMS FRANCE", 
+    "DECL_AVANT_MONTANT": 33809.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 172.0, 
-    "LABO": "EDAP+TMS+FRANCE", 
-    "DECL_AVANT_MONTANT": 33809.0
+    "DECL_AVANT_COUNT": 163.0, 
+    "LABO": "EDAP TMS France", 
+    "DECL_AVANT_MONTANT": 32471.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
@@ -1268,13 +1184,13 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 62.0, 
-    "LABO": "EOS+IMAGING", 
+    "LABO": "EOS IMAGING", 
     "DECL_AVANT_MONTANT": 15757.610000000002
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 10.0, 
-    "LABO": "ESAOTE+FRANCE", 
+    "LABO": "ESAOTE FRANCE", 
     "DECL_AVANT_MONTANT": 2129.0
   }, 
   {
@@ -1286,7 +1202,7 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 132.0, 
-    "LABO": "EUMEDICA+SA", 
+    "LABO": "EUMEDICA SA", 
     "DECL_AVANT_MONTANT": 45395.0
   }, 
   {
@@ -1298,7 +1214,7 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 603.0, 
-    "LABO": "EUROSILICONE+SAS", 
+    "LABO": "EUROSILICONE SAS", 
     "DECL_AVANT_MONTANT": 61162.0
   }, 
   {
@@ -1315,32 +1231,20 @@
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 148.0, 
+    "DECL_AVANT_COUNT": 346.0, 
     "LABO": "EXACTECH FRANCE", 
-    "DECL_AVANT_MONTANT": 19379.0
+    "DECL_AVANT_MONTANT": 43562.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 198.0, 
-    "LABO": "EXACTECH+FRANCE", 
-    "DECL_AVANT_MONTANT": 24183.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 851.0, 
+    "DECL_AVANT_COUNT": 1418.0, 
     "LABO": "FCI SAS", 
-    "DECL_AVANT_MONTANT": 97859.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 567.0, 
-    "LABO": "FCI+SAS", 
-    "DECL_AVANT_MONTANT": 62051.0
+    "DECL_AVANT_MONTANT": 159910.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 2122.0, 
-    "LABO": "FH+ORTHOPEDICS", 
+    "LABO": "FH ORTHOPEDICS", 
     "DECL_AVANT_MONTANT": 344808.13999999996
   }, 
   {
@@ -1358,7 +1262,7 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 4832.0, 
-    "LABO": "FRESENIUS+MEDICAL+CARE+FRANCE+SAS", 
+    "LABO": "FRESENIUS MEDICAL CARE FRANCE SAS", 
     "DECL_AVANT_MONTANT": 744844.0
   }, 
   {
@@ -1382,25 +1286,25 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 650.0, 
-    "LABO": "GE+HEALTHCARE+SAS", 
+    "LABO": "GE HEALTHCARE SAS", 
     "DECL_AVANT_MONTANT": 52357.339
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 848.0, 
-    "LABO": "GE+MEDICAL+SYSTEMS", 
+    "LABO": "GE MEDICAL SYSTEMS", 
     "DECL_AVANT_MONTANT": 39789.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 68.0, 
-    "LABO": "GEDEON RICHTER France - Division Sant\u00e9 de la Femme", 
+    "LABO": "GEDEON RICHTER France - Division Sante de la Femme", 
     "DECL_AVANT_MONTANT": 16427.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 68.0, 
-    "LABO": "GEDEON+RICHTER+France+-+Division+Sante+de+la+Femme", 
+    "LABO": "GEDEON RICHTER France - Division Sant\u00e9 de la Femme", 
     "DECL_AVANT_MONTANT": 16427.0
   }, 
   {
@@ -1424,13 +1328,13 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 190.0, 
-    "LABO": "GLOBAL+D", 
+    "LABO": "GLOBAL D", 
     "DECL_AVANT_MONTANT": 15541.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 6.0, 
-    "LABO": "GRAFTYS+SA", 
+    "LABO": "GRAFTYS SA", 
     "DECL_AVANT_MONTANT": 2488.0
   }, 
   {
@@ -1460,13 +1364,13 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 9.0, 
-    "LABO": "HEMODIA+SAS", 
+    "LABO": "HEMODIA SAS", 
     "DECL_AVANT_MONTANT": 242.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 986.0, 
-    "LABO": "HEMOTECH+SA", 
+    "LABO": "HEMOTECH SA", 
     "DECL_AVANT_MONTANT": 475287.0
   }, 
   {
@@ -1478,7 +1382,7 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 126.0, 
-    "LABO": "HOLLISTER+FRANCE", 
+    "LABO": "HOLLISTER FRANCE", 
     "DECL_AVANT_MONTANT": 47635.370000000003
   }, 
   {
@@ -1490,7 +1394,7 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 1.0, 
-    "LABO": "IDS+FRANCE", 
+    "LABO": "IDS FRANCE", 
     "DECL_AVANT_MONTANT": 405.0
   }, 
   {
@@ -1508,7 +1412,7 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 10.0, 
-    "LABO": "INNOTECH+INTERNATIONAL", 
+    "LABO": "INNOTECH INTERNATIONAL", 
     "DECL_AVANT_MONTANT": 732.0
   }, 
   {
@@ -1520,7 +1424,7 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 84.0, 
-    "LABO": "INSTRUMENTATION+LABORATORY", 
+    "LABO": "INSTRUMENTATION LABORATORY", 
     "DECL_AVANT_MONTANT": 29424.200000000001
   }, 
   {
@@ -1556,7 +1460,7 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 15329.0, 
-    "LABO": "JANSSEN+CILAG", 
+    "LABO": "JANSSEN CILAG", 
     "DECL_AVANT_MONTANT": 1318261.0
   }, 
   {
@@ -1573,15 +1477,15 @@
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 49.0, 
-    "LABO": "KISCO International", 
-    "DECL_AVANT_MONTANT": 15899.0
+    "DECL_AVANT_COUNT": 39.0, 
+    "LABO": "KISCO INTERNATIONAL", 
+    "DECL_AVANT_MONTANT": 14693.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 39.0, 
-    "LABO": "KISCO+INTERNATIONAL", 
-    "DECL_AVANT_MONTANT": 14693.0
+    "DECL_AVANT_COUNT": 49.0, 
+    "LABO": "KISCO International", 
+    "DECL_AVANT_MONTANT": 15899.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
@@ -1591,15 +1495,9 @@
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 14.0, 
+    "DECL_AVANT_COUNT": 22.0, 
     "LABO": "LA DIFFUSION TECHNIQUE FRANCAISE", 
-    "DECL_AVANT_MONTANT": 2375.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 8.0, 
-    "LABO": "LA+DIFFUSION+TECHNIQUE+FRANCAISE", 
-    "DECL_AVANT_MONTANT": 1859.0
+    "DECL_AVANT_MONTANT": 4234.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
@@ -1609,135 +1507,123 @@
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
+    "DECL_AVANT_COUNT": 150.0, 
+    "LABO": "LABORATOIRE C.C.D", 
+    "DECL_AVANT_MONTANT": 7434.1000000000004
+  }, 
+  {
+    "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 142.0, 
     "LABO": "LABORATOIRE C.C.D.", 
     "DECL_AVANT_MONTANT": 6531.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 150.0, 
-    "LABO": "LABORATOIRE+C.C.D", 
-    "DECL_AVANT_MONTANT": 7434.1000000000004
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 1472.0, 
-    "LABO": "LABORATOIRE+CHAUVIN", 
+    "LABO": "LABORATOIRE CHAUVIN", 
     "DECL_AVANT_MONTANT": 139964.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 5.0, 
-    "LABO": "LABORATOIRE+EREMPHARMA", 
+    "LABO": "LABORATOIRE EREMPHARMA", 
     "DECL_AVANT_MONTANT": 188.14999999999998
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 835.0, 
-    "LABO": "LABORATOIRE+INNOTHERA", 
+    "LABO": "LABORATOIRE INNOTHERA", 
     "DECL_AVANT_MONTANT": 20798.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 469.0, 
-    "LABO": "LABORATOIRE+NOVEX+PHARMA", 
+    "LABO": "LABORATOIRE NOVEX PHARMA", 
     "DECL_AVANT_MONTANT": 353414.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 7251.0, 
-    "LABO": "LABORATOIRE+THERAMEX+SAM", 
+    "LABO": "LABORATOIRE THERAMEX SAM", 
     "DECL_AVANT_MONTANT": 549440.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 1043.0, 
-    "LABO": "LABORATOIRES GENEVRIER", 
-    "DECL_AVANT_MONTANT": 93577.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 184.0, 
-    "LABO": "LABORATOIRES VIVACY SAS", 
-    "DECL_AVANT_MONTANT": 102243.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 315.0, 
-    "LABO": "LABORATOIRES+ALCON", 
+    "LABO": "LABORATOIRES ALCON", 
     "DECL_AVANT_MONTANT": 114956.31
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 829.0, 
-    "LABO": "LABORATOIRES+COLOPLAST", 
+    "LABO": "LABORATOIRES COLOPLAST", 
     "DECL_AVANT_MONTANT": 78203.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 503.0, 
-    "LABO": "LABORATOIRES+CONVATEC", 
+    "LABO": "LABORATOIRES CONVATEC", 
     "DECL_AVANT_MONTANT": 44516.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 332.0, 
-    "LABO": "LABORATOIRES+DERMATOLOGIQUES+URIAGE", 
+    "LABO": "LABORATOIRES DERMATOLOGIQUES URIAGE", 
     "DECL_AVANT_MONTANT": 57727.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 2696.0, 
-    "LABO": "LABORATOIRES+EXPANSCIENCE", 
+    "LABO": "LABORATOIRES EXPANSCIENCE", 
     "DECL_AVANT_MONTANT": 197497.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 1916.0, 
-    "LABO": "LABORATOIRES+GALDERMA", 
+    "LABO": "LABORATOIRES GALDERMA", 
     "DECL_AVANT_MONTANT": 310377.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 1078.0, 
-    "LABO": "LABORATOIRES+GENEVRIER", 
-    "DECL_AVANT_MONTANT": 95761.0
+    "DECL_AVANT_COUNT": 2121.0, 
+    "LABO": "LABORATOIRES GENEVRIER", 
+    "DECL_AVANT_MONTANT": 189338.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 8994.0, 
-    "LABO": "LABORATOIRES+GRUNENTHAL", 
+    "LABO": "LABORATOIRES GRUNENTHAL", 
     "DECL_AVANT_MONTANT": 641265.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 4517.0, 
-    "LABO": "LABORATOIRES+LEO+SAS", 
+    "LABO": "LABORATOIRES LEO SAS", 
     "DECL_AVANT_MONTANT": 151134.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 50.0, 
-    "LABO": "LABORATOIRES+LOHMANN++RAUSCHER+SAS", 
+    "LABO": "LABORATOIRES LOHMANN  RAUSCHER SAS", 
     "DECL_AVANT_MONTANT": 6924.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 79.0, 
-    "LABO": "LABORATOIRES+SPIRIG", 
+    "LABO": "LABORATOIRES SPIRIG", 
     "DECL_AVANT_MONTANT": 7682.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 641.0, 
-    "LABO": "LABORATOIRES+URGO", 
+    "LABO": "LABORATOIRES URGO", 
     "DECL_AVANT_MONTANT": 40772.300000000003
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 112.0, 
-    "LABO": "LABORATOIRES+VIVACY+SAS", 
-    "DECL_AVANT_MONTANT": 62025.850000000006
+    "DECL_AVANT_COUNT": 296.0, 
+    "LABO": "LABORATOIRES VIVACY SAS", 
+    "DECL_AVANT_MONTANT": 164268.85000000006
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
@@ -1754,7 +1640,7 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 124.0, 
-    "LABO": "LEMAITRE+VASCULAR+SAS", 
+    "LABO": "LEMAITRE VASCULAR SAS", 
     "DECL_AVANT_MONTANT": 20800.0
   }, 
   {
@@ -1765,20 +1651,14 @@
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 98263.0, 
+    "DECL_AVANT_COUNT": 129401.0, 
     "LABO": "LES LABORATOIRES SERVIER", 
-    "DECL_AVANT_MONTANT": 8621330.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 31138.0, 
-    "LABO": "LES+LABORATOIRES+SERVIER", 
-    "DECL_AVANT_MONTANT": 2539580.0
+    "DECL_AVANT_MONTANT": 11160910.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 1488.0, 
-    "LABO": "LFB+BIOTECHNOLOGIES", 
+    "LABO": "LFB BIOTECHNOLOGIES", 
     "DECL_AVANT_MONTANT": 97691.0
   }, 
   {
@@ -1790,26 +1670,20 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 46630.0, 
-    "LABO": "LUNDBECK+SAS", 
+    "LABO": "LUNDBECK SAS", 
     "DECL_AVANT_MONTANT": 4621491.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 27205.0, 
+    "DECL_AVANT_COUNT": 55680.0, 
     "LABO": "Laboratoire GlaxoSmithKline SAS", 
-    "DECL_AVANT_MONTANT": 1867174.0
+    "DECL_AVANT_MONTANT": 3815530.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 7053.0, 
     "LABO": "Laboratoire Theramex SAM", 
     "DECL_AVANT_MONTANT": 534635.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 28475.0, 
-    "LABO": "Laboratoire+GlaxoSmithKline+SAS", 
-    "DECL_AVANT_MONTANT": 1948356.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
@@ -1838,7 +1712,7 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 3.0, 
-    "LABO": "MACO+PHARMA+-+MACO+PRODUCTIONS", 
+    "LABO": "MACO PHARMA - MACO PRODUCTIONS", 
     "DECL_AVANT_MONTANT": 1540.0
   }, 
   {
@@ -1855,15 +1729,9 @@
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 1561.0, 
+    "DECL_AVANT_COUNT": 3274.0, 
     "LABO": "MEDA PHARMA", 
-    "DECL_AVANT_MONTANT": 101447.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 1713.0, 
-    "LABO": "MEDA+PHARMA", 
-    "DECL_AVANT_MONTANT": 106518.70000000003
+    "DECL_AVANT_MONTANT": 207965.70000000001
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
@@ -1910,7 +1778,7 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 4412.0, 
-    "LABO": "MERZ+PHARMA+FRANCE", 
+    "LABO": "MERZ PHARMA FRANCE", 
     "DECL_AVANT_MONTANT": 564369.0
   }, 
   {
@@ -1928,25 +1796,25 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 85.0, 
-    "LABO": "MOLNLYCKE+HEALTH+CARE", 
+    "LABO": "MOLNLYCKE HEALTH CARE", 
     "DECL_AVANT_MONTANT": 20729.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 73234.0, 
-    "LABO": "MSD+FRANCE", 
+    "LABO": "MSD FRANCE", 
     "DECL_AVANT_MONTANT": 3332956.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 19380.0, 
-    "LABO": "MUNDIPHARMA+SAS", 
+    "LABO": "MUNDIPHARMA SAS", 
     "DECL_AVANT_MONTANT": 2112710.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 284.0, 
-    "LABO": "MYLAN+SAS", 
+    "LABO": "MYLAN SAS", 
     "DECL_AVANT_MONTANT": 17380.0
   }, 
   {
@@ -1975,20 +1843,20 @@
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
+    "DECL_AVANT_COUNT": 1060.0, 
+    "LABO": "NIPRO FRANCE", 
+    "DECL_AVANT_MONTANT": 138114.0
+  }, 
+  {
+    "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 1014.0, 
     "LABO": "NIPRO France", 
     "DECL_AVANT_MONTANT": 131067.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 1060.0, 
-    "LABO": "NIPRO+FRANCE", 
-    "DECL_AVANT_MONTANT": 138114.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 666.0, 
-    "LABO": "NOVARTIS+VACCINES+AND+DIAGNOSTICS+SAS", 
+    "LABO": "NOVARTIS VACCINES AND DIAGNOSTICS SAS", 
     "DECL_AVANT_MONTANT": 65825.450000000012
   }, 
   {
@@ -2000,7 +1868,7 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 169.0, 
-    "LABO": "NUTRICIA+NUTRITION+CLINIQUE", 
+    "LABO": "NUTRICIA NUTRITION CLINIQUE", 
     "DECL_AVANT_MONTANT": 25124.0
   }, 
   {
@@ -2048,7 +1916,7 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 646.0, 
-    "LABO": "OTSUKA+PHARMACEUTICAL+FRANCE+SAS", 
+    "LABO": "OTSUKA PHARMACEUTICAL FRANCE SAS", 
     "DECL_AVANT_MONTANT": 144374.0
   }, 
   {
@@ -2084,7 +1952,7 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 590.0, 
-    "LABO": "PEROUSE+MEDICAL", 
+    "LABO": "PEROUSE MEDICAL", 
     "DECL_AVANT_MONTANT": 97528.0
   }, 
   {
@@ -2102,7 +1970,7 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 359.0, 
-    "LABO": "PHADIA+SAS", 
+    "LABO": "PHADIA SAS", 
     "DECL_AVANT_MONTANT": 19165.0
   }, 
   {
@@ -2114,13 +1982,13 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 648.0, 
-    "LABO": "PHILIPS+FRANCE", 
+    "LABO": "PHILIPS FRANCE", 
     "DECL_AVANT_MONTANT": 39367.619999999995
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 342.0, 
-    "LABO": "PHYSIOL+FRANCE", 
+    "LABO": "PHYSIOL FRANCE", 
     "DECL_AVANT_MONTANT": 58288.0
   }, 
   {
@@ -2144,7 +2012,7 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 1227.0, 
-    "LABO": "PROSTRAKAN+PHARMA", 
+    "LABO": "PROSTRAKAN PHARMA", 
     "DECL_AVANT_MONTANT": 98965.0
   }, 
   {
@@ -2155,39 +2023,21 @@
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 98.0, 
+    "DECL_AVANT_COUNT": 150.0, 
     "LABO": "PROTHEOS OUEST", 
-    "DECL_AVANT_MONTANT": 49750.0
+    "DECL_AVANT_MONTANT": 73149.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 52.0, 
-    "LABO": "PROTHEOS+OUEST", 
-    "DECL_AVANT_MONTANT": 23399.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 25.0, 
+    "DECL_AVANT_COUNT": 38.0, 
     "LABO": "PSI CRO AG", 
-    "DECL_AVANT_MONTANT": 18101.0
+    "DECL_AVANT_MONTANT": 22454.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 1.0, 
+    "DECL_AVANT_COUNT": 2.0, 
     "LABO": "PSI CRO FRANCE", 
-    "DECL_AVANT_MONTANT": 1500.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 13.0, 
-    "LABO": "PSI+CRO+AG", 
-    "DECL_AVANT_MONTANT": 4353.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 1.0, 
-    "LABO": "PSI+CRO+FRANCE", 
-    "DECL_AVANT_MONTANT": 1500.0
+    "DECL_AVANT_MONTANT": 3000.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
@@ -2234,13 +2084,13 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 41.0, 
-    "LABO": "RECKITT+BENCKISER+HEALTHCARE+FRANCE", 
+    "LABO": "RECKITT BENCKISER HEALTHCARE FRANCE", 
     "DECL_AVANT_MONTANT": 5296.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 609.0, 
-    "LABO": "RESMED+SAS", 
+    "LABO": "RESMED SAS", 
     "DECL_AVANT_MONTANT": 35130.0
   }, 
   {
@@ -2252,7 +2102,7 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 769.0, 
-    "LABO": "ROCHE+DIAGNOSTICS+FRANCE", 
+    "LABO": "ROCHE DIAGNOSTICS FRANCE", 
     "DECL_AVANT_MONTANT": 134539.0
   }, 
   {
@@ -2288,25 +2138,25 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 58.0, 
-    "LABO": "SINCLAIR+PHARMA", 
+    "LABO": "SINCLAIR PHARMA", 
     "DECL_AVANT_MONTANT": 2104.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 1393.0, 
-    "LABO": "SMITH++NEPHEW+SAS", 
+    "LABO": "SMITH  NEPHEW SAS", 
     "DECL_AVANT_MONTANT": 393291.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 8.0, 
-    "LABO": "SMITHS MEDICAL France", 
+    "LABO": "SMITHS MEDICAL FRANCE", 
     "DECL_AVANT_MONTANT": 1010.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 8.0, 
-    "LABO": "SMITHS+MEDICAL+FRANCE", 
+    "LABO": "SMITHS MEDICAL France", 
     "DECL_AVANT_MONTANT": 1010.0
   }, 
   {
@@ -2318,19 +2168,19 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 44.0, 
-    "LABO": "SPECTRANETICS+INTERNATIONAL+BV", 
+    "LABO": "SPECTRANETICS INTERNATIONAL BV", 
     "DECL_AVANT_MONTANT": 8627.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 177.0, 
-    "LABO": "SPECTRUM+PHARMACEUTICALS+B.V", 
+    "LABO": "SPECTRUM PHARMACEUTICALS B.V", 
     "DECL_AVANT_MONTANT": 6528.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 2677.0, 
-    "LABO": "ST+JUDE+MEDICAL+FRANCE+SAS", 
+    "LABO": "ST JUDE MEDICAL FRANCE SAS", 
     "DECL_AVANT_MONTANT": 1160213.0
   }, 
   {
@@ -2354,13 +2204,13 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 173.0, 
-    "LABO": "SYMBIOS+SAS", 
+    "LABO": "SYMBIOS SAS", 
     "DECL_AVANT_MONTANT": 63158.479999999989
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 446.0, 
-    "LABO": "SYSMEX+FRANCE", 
+    "LABO": "SYSMEX FRANCE", 
     "DECL_AVANT_MONTANT": 36914.320000000022
   }, 
   {
@@ -2413,39 +2263,33 @@
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
+    "DECL_AVANT_COUNT": 15433.0, 
+    "LABO": "TAKEDA FRANCE", 
+    "DECL_AVANT_MONTANT": 642305.0
+  }, 
+  {
+    "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 14947.0, 
     "LABO": "TAKEDA France", 
     "DECL_AVANT_MONTANT": 624499.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 15433.0, 
-    "LABO": "TAKEDA+FRANCE", 
-    "DECL_AVANT_MONTANT": 642305.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 4285.0, 
-    "LABO": "TEVA+PHARMA", 
+    "LABO": "TEVA PHARMA", 
     "DECL_AVANT_MONTANT": 643931.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 5465.0, 
-    "LABO": "TEVA+SANTE", 
+    "LABO": "TEVA SANTE", 
     "DECL_AVANT_MONTANT": 409205.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 44.0, 
+    "DECL_AVANT_COUNT": 99.0, 
     "LABO": "THERABEL LUCIEN PHARMA", 
-    "DECL_AVANT_MONTANT": 2306.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 55.0, 
-    "LABO": "THERABEL+LUCIEN+PHARMA", 
-    "DECL_AVANT_MONTANT": 2571.0
+    "DECL_AVANT_MONTANT": 4877.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
@@ -2455,20 +2299,14 @@
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 1306.0, 
+    "DECL_AVANT_COUNT": 4038.0, 
     "LABO": "TORNIER SAS", 
-    "DECL_AVANT_MONTANT": 687479.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 2732.0, 
-    "LABO": "TORNIER+SAS", 
-    "DECL_AVANT_MONTANT": 435296.29000000079
+    "DECL_AVANT_MONTANT": 1122775.2899999979
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 42.0, 
-    "LABO": "TRANSYSTEME-JMT+IMPLANTS", 
+    "LABO": "TRANSYSTEME-JMT IMPLANTS", 
     "DECL_AVANT_MONTANT": 8718.0
   }, 
   {
@@ -2480,19 +2318,19 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 3.0, 
-    "LABO": "UNILEVER+FRANCE", 
+    "LABO": "UNILEVER FRANCE", 
     "DECL_AVANT_MONTANT": 390.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 1672.0, 
-    "LABO": "VASCUTEK+FRANCE+GMBH", 
+    "LABO": "VASCUTEK FRANCE GMBH", 
     "DECL_AVANT_MONTANT": 353310.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 67.0, 
-    "LABO": "VERTEX+PHARMACEUTICALS+INCORPORATED", 
+    "LABO": "VERTEX PHARMACEUTICALS INCORPORATED", 
     "DECL_AVANT_MONTANT": 1565.6700000000001
   }, 
   {
@@ -2510,19 +2348,19 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 2619.0, 
-    "LABO": "VIFOR+FRANCE+SA", 
+    "LABO": "VIFOR FRANCE SA", 
     "DECL_AVANT_MONTANT": 136045.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 733.0, 
-    "LABO": "VIIV+HEALTHCARE+SAS", 
+    "LABO": "VIIV HEALTHCARE SAS", 
     "DECL_AVANT_MONTANT": 122742.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 306.0, 
-    "LABO": "VITALITEC+INTERNATIONAL", 
+    "LABO": "VITALITEC INTERNATIONAL", 
     "DECL_AVANT_MONTANT": 21875.899999999987
   }, 
   {
@@ -2540,20 +2378,14 @@
   {
     "ORIGIN": "M\u00e9decin", 
     "DECL_AVANT_COUNT": 56.0, 
-    "LABO": "WELEDA+SA", 
+    "LABO": "WELEDA SA", 
     "DECL_AVANT_MONTANT": 4684.0
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 24.0, 
+    "DECL_AVANT_COUNT": 49.0, 
     "LABO": "WIDEX SAS", 
-    "DECL_AVANT_MONTANT": 12413.0
-  }, 
-  {
-    "ORIGIN": "M\u00e9decin", 
-    "DECL_AVANT_COUNT": 25.0, 
-    "LABO": "WIDEX+SAS", 
-    "DECL_AVANT_MONTANT": 13102.319999999998
+    "DECL_AVANT_MONTANT": 25515.32
   }, 
   {
     "ORIGIN": "M\u00e9decin", 
