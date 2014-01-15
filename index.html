@@ -100,7 +100,7 @@ background: #A51218;
 cursor: pointer;
 }
 
-#Spec_DataList{text-align: center;}
+#Spec_DataList{text-align: center; height: 260px;}
 
 </style>
 	</head>
@@ -128,21 +128,20 @@ cursor: pointer;
 			<div id="Spec_DataList">
 				<div class="six columns alpha">
 				<!-- A remplacer par instruction PHP -->
+				
+				<!-- -->
 				<form id="formDataList">
 				<select id="SpecData" name="SpecData" size="10">
-					<option value="Spec1">Specialite 1</option>
-					<option value="Spec2">Specialite 2</option>
-					<option value="Spec3">Specialite 3</option>
-					<option value="Spec4">Specialite 4</option>
-					<option value="Spec5">Specialite 5</option>
+					
 				</select>
 				</form>
 				<div id="SubmitData">Visualiser</div>
 				</div>
 				<div class="ten columns omega">
-				<div id="Spec_Treemap"></div>
+				<div id="Small_Treemap"></div>
 				</div>
 			</div>
+			<div id="Complete_Treemap"><div id="Spec_Treemap"></div></div>
 		</div>
 		
 		<!-- Sort by Company -->
@@ -178,6 +177,10 @@ cursor: pointer;
 	mydata = [];
 	specialites = { "name" : "specialites", "children" : []};
 	
+
+	
+	
+	
 	this.margins = new margins();
 	this.Layouts = new Layouts();
 	this.Containers = new Containers();
@@ -199,12 +202,46 @@ cursor: pointer;
 
 				/* var HSLoriginColor = originColor.map(function(triplet){
 				result = d3.rgb(triplet[0],triplet[1],triplet[2]).hsl();
-				return result; 
+				return result; S
 				}); */
 		
-	 
+	var Treemap_Width = document.getElementById('Small_Treemap').parentNode.offsetWidth
+
+		   SunshineInstance = new Sunshine();
+		   
+		   
+		   			miniTreemap = d3.select('#Small_Treemap')
+						.style("position", "relative")
+						.style("width", (Treemap_Width - (margin.left + margin.right)) + "px")
+						.style("height", (220) + "px")
+						.style("left", margin.left + "px");
+		   SmallTreemap = document.getElementById('SubmitData');
+		   
+		   SmallTreemap.onclick = function(){
+		 
+		 Mintreemap = d3.layout.treemap()
+		.size([(Treemap_Width - (margin.left + margin.right)), 220]) 
+		.sticky(true)
+		.value(function(d) { return d.size; }); 
+		 
 			
-		   SunshineInstance = new Sunshine(); 
+		   LoadDataSet = document.getElementById('SpecData');
+		   DataSetValue = LoadDataSet.value;
+		   
+		    DataSet = _.find(specialites["children"], function(element) {return (element["name"] == DataSetValue)});
+		   console.log(DataSet);
+			node = miniTreemap.datum(DataSet).selectAll('.node')
+			.data(Mintreemap.nodes)
+			.enter().append('div')
+			.attr('class', 'node')
+			.call(position)
+			.style("background", function(d) { return d.children ? color(d.name) : null; })
+			.on('mouseover',function(d){this.style.border = "dashed 3px #FFF"; this.parentNode.style.border = "solid 3px #FFF"; })
+			.on('mouseout',function(d){this.style.border = "solid 1px #FFF";})
+			.text(function(d) { return d.children ? null : d.name; })
+		 
+		 
+		   }
 		  }
 	  
 	  /*** DATASETS FUNCTIONS ***/
@@ -283,15 +320,27 @@ cursor: pointer;
 				var spec = _.find(specialites["children"], function(element) {return (element["name"] == key)});
 				
 				if (spec) {
+				
 					var labo = _.find(spec["children"], function(element) {return (element["name"] == d['LABO'])});
 					if (labo) {
 						console.log("error");
 					} else {
+				
 					if(((d[key] > 100000))){
 						spec["children"].push({name: d['LABO'], size: d[key]}); }
 					}
 				} else {
+				
 				if(((d[key] > 100000))){
+					list = document.getElementById('SpecData');
+					
+					// liste specialites pour formulaire 
+					option = document.createElement('option');
+					option.value = key;
+					option.innerHTML = key;
+					list.appendChild(option);
+					
+					
 					specialites["children"].push({"name" : key, "children" : [{"name" : d['LABO'], "size" : d[key]}] });	
 					}
 				}
@@ -385,7 +434,10 @@ cursor: pointer;
 			.attr('class', 'node')
 			.call(position)
 			.style("background", function(d) { return d.children ? color(d.name) : null; })
-			.text(function(d) { return d.children ? null : d.name; });
+			.on('mouseover',function(d){this.style.border = "dashed 3px #FFF"; this.parentNode.style.border = "solid 3px #FFF"; })
+			.on('mouseout',function(d){this.style.border = "solid 1px #FFF";})
+			.text(function(d) { return d.children ? null : d.name; })
+			;
 		 
 		
 		} 
@@ -439,7 +491,7 @@ cursor: pointer;
 	/* margins */
 	
 	function margins(){
-	 
+			Treemap_Width = document.getElementById('Spec_Treemap').parentNode.offsetWidth
 			margin = {top: 20, right: 20, bottom: 30, left: 40},
 			width = 960 - margin.left - margin.right,
 			height = 600 - margin.top - margin.bottom;
@@ -507,7 +559,7 @@ cursor: pointer;
 	  
 	
 		treemap = d3.layout.treemap()
-		.size([(width - (margin.left + margin.right)), height]) 
+		.size([(Treemap_Width - (margin.left + margin.right)), height]) 
 		.sticky(true)
 		.value(function(d) { return d.size; }); 
 	
@@ -533,10 +585,10 @@ cursor: pointer;
 	div = d3.select("body").select(Treemap_Location).append("div")
 			.attr("id","treemap")
 			.style("position", "relative")
-			.style("width", (width - (margin.left + margin.right)) + "px")
+			.style("width", (Treemap_Width - (margin.left + margin.right)) + "px")
 			.style("height", (height + margin.top + margin.bottom) + "px")
 			.style("left", margin.left + "px")
-			.style("top", margin.top + "px");
+			// .style("top", margin.top + "px");
 	
 	return {'stackbars':svg,'pie':pie_chart,'treemap':div}
 	}
