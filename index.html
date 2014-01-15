@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<head>
+<!-- De jolies infographies codées par Regards Citoyens -->
+<!-- Rajouter les metas -->
+
+<!-- Frameworks CSS -->
+<link href="css/base.css" type="text/css" rel="stylesheet" />
+<link href="css/skeleton.css" type="text/css" rel="stylesheet" />
+<link href="css/layout.css" type="text/css" rel="stylesheet" />
+
+<!-- CSS a Externaliser -->
+<style>
+body{
+  font: 10px sans-serif;
+}
+
+.node{
+	 border: 1px solid #FFFFFF;
+    font: 10px/12px sans-serif;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 2px;
+	
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  display: block;
+}
+
+.container .header{
+text-align: center;
+}
+nav .eight.columns{
+text-align: center;
+}
+nav li.active{
+background: #B53238;
+}
+nav li{
+border-bottom: solid 10px #A51218;
+margin-bottom: 0;
+}
+nav h2{
+margin-top: 10px;
+color: #A51218;
+}
+nav a{
+text-decoration: none;
+}
+#BySpec, #ByLab, nav li{
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+background: #EFEFEF;
+}
+#ToSpec:focus{
+background:#0F0;
+}
+#BySpec:target{
+display: block;
+}
+#ByLab,#BySpec{
+display: none;
+}
+#ByLab:target{
+display: block;
+}
+hr{
+border-width: 2px;
+border-color:  #A51218;
+}
+
+.TextInfo{
+fill: #A51218;
+text-anchor : end;
+}
+form#formDataList select{
+margin: 0 auto;
+}
+
+#SubmitData{
+padding: 10px 30px;
+display: inline-block;
+margin: 0 auto 20px;
+color: #FFF;
+background: #A51218;
+cursor: pointer;
+}
+
+#Spec_DataList{text-align: center;}
+
+</style>
+	</head>
+<body>
+	<div class="container">
+	
+		<!-- Header -->
+		<div class="sixteen columns header">
+			<h1>Professionels de Santé</h1>
+		</div>
+		
+		<!-- Navigation -->
+		<nav>
+			<ul>
+				<li class="eight columns" id="ToSpec"><a href="#BySpec" title="voir par Specialite"><h2>Par sp&eacute;cialit&eacute;</h2></a></li>
+				<li class="eight columns" id="ToLab"><a href="#ByLab" title="voir par Laboratoire"><h2>Par Laboratoire</h2></a></li>	
+			</ul>
+		</nav>
+		
+		<!-- Sort by Activity Domain -->
+		<div class="sixteen columns" id="BySpec">
+			<!-- Affichage des stackbars -->
+			<div id="Spec_Stacks"></div>
+			<hr />
+			<div id="Spec_DataList">
+				<div class="six columns alpha">
+				<!-- A remplacer par instruction PHP -->
+				<form id="formDataList">
+				<select id="SpecData" name="SpecData" size="10">
+					<option value="Spec1">Specialite 1</option>
+					<option value="Spec2">Specialite 2</option>
+					<option value="Spec3">Specialite 3</option>
+					<option value="Spec4">Specialite 4</option>
+					<option value="Spec5">Specialite 5</option>
+				</select>
+				</form>
+				<div id="SubmitData">Visualiser</div>
+				</div>
+				<div class="ten columns omega">
+				<div id="Spec_Treemap"></div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Sort by Company -->
+		<div class="sixteen columns" id="ByLab">
+			
+			<!-- Stackbars container -->
+			<div id="Lab_Stacks"></div>
+			
+			<hr />
+			
+			<!-- Treemap container -->
+			<div id="Lab_Treemap"></div>
+			
+			<!-- DataList container -->
+			<div id="Lab_DataList"></div>
+		
+		</div>
+	</div>
+	
+	<footer>
+		<!-- Mettre un joli footer ici :D -->
+	</footer>
+	<script type="text/javascript" src="js/underscore.js"></script>
+		<script src="js/d3.v3.min.js"></script>
+	<script type="text/javascript"> 	
+	
+	function Sunshine(){
+	
+	  color = d3.scale.category20c(); // Color chart Creation
+	// color = d3.scale.ordinal().range(["#98abc5"]);
+	Stack_Location = "#Spec_Stacks";
+	Treemap_Location = "#Spec_Treemap";
+	mydata = [];
+	specialites = { "name" : "specialites", "children" : []};
+	
+	this.margins = new margins();
+	this.Layouts = new Layouts();
+	this.Containers = new Containers();
+    this.AxisScale = new AxisScale();
+	this.DataSets = new DataSets();
+	this.TextInfo = new TextInfo();
+	
+	}
+
+	/* Onload */
+
+	window.onload = function(){
+		
+				/* A virer et remplacer */
+				var color = d3.scale.ordinal()
+				.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+
+				var originColor = [[0,0,255],[0,255,0],[255,0,0],[255,255,0],[0,0,255],[255,0,255],[100,100,0],[155,55,102],[255,255,0]];
+
+				/* var HSLoriginColor = originColor.map(function(triplet){
+				result = d3.rgb(triplet[0],triplet[1],triplet[2]).hsl();
+				return result; 
+				}); */
+		
+	 
+			
+		   SunshineInstance = new Sunshine(); 
+		  }
+	  
+	  /*** DATASETS FUNCTIONS ***/
+	
+/* Global Calls to DataSet */
+
+	function DataSets(){
+
+		d3.json("sunshine.doctors.labo-spec.test.json", function(error, data) {
+		 
+			for(i=0;i<data.length;i++){
+				data[i].pos = i;
+			}
+		 
+			data.forEach(function(d){ // Process RawData->DataSets
+				PieData(d); 
+				TreemapData(d);
+				
+			})
+
+			
+			populate_treemap(); // Create Treemap
+			data = data.slice(0,16);
+			
+			
+			data.forEach(function(d) {
+				// mapping data for stackbars
+				var y0 = 0;
+				d.amount = color.domain().map(function(name) {  return {name: name, y0: y0, y1: y0 += +(d[name]||0), "pos": d['pos']}; });
+				d.total = d.amount[d.amount.length - 1].y1;
+				
+			});
+
+			data.sort(function(a, b) { return b.total - a.total; });
+			x.domain(data.map(function(d) { return d.LABO; })); 
+			y.domain([0, d3.max(data, function(d) { return d.total; })]);
+
+			RenderStackBars(data);
+		 
+	 
+		});
+
+
+
+	return {'treemap':specialites,'stacks':mydata}
+	}
+	
+	/** Process DataSet for Pies **/  
+	
+	function PieData(d){
+
+		pie_sample = [];
+		montant = 0;
+		
+		for(var key in d){ 
+			if(key != 'LABO'){
+				montant = +d[key];
+
+				pie_sample.push({"specialite" : key, "montant" : montant })
+
+			}
+		}
+
+
+		mydata.push(pie_sample);
+		
+	}
+
+	/** Process DataSet for Treemap **/
+	
+	function TreemapData(d){
+
+		for(var key in d){
+			if(key != "LABO" || key != "pos" ){
+				
+				var spec = _.find(specialites["children"], function(element) {return (element["name"] == key)});
+				
+				if (spec) {
+					var labo = _.find(spec["children"], function(element) {return (element["name"] == d['LABO'])});
+					if (labo) {
+						console.log("error");
+					} else {
+					if(((d[key] > 100000))){
+						spec["children"].push({name: d['LABO'], size: d[key]}); }
+					}
+				} else {
+				if(((d[key] > 100000))){
+					specialites["children"].push({"name" : key, "children" : [{"name" : d['LABO'], "size" : d[key]}] });	
+					}
+				}
+			}
+		
+		}
+
+
+	}
+	  
+	/*** END OF DATASETS FUNCTIONS ***/
+	
+	/*** RENDERING FUNCTIONS ***/
+
+	/** Stackbars Generation **/
+	
+	function RenderStackBars(data){
+
+		LABO = svg.selectAll(".LABO")
+		  .data(data)
+		  .enter().append("g") 
+		  .attr("class", "g")
+		  .attr("data-pos", function(d){ return d.pos })
+		  .attr("transform", function(d) { return "translate(" + x(d.LABO) + ",0)"; })
+		  .on("mouseover",function(d,i){ PieOnTheFly(d,i,this); })
+		  .on("mouseout",function(d,i){ /*	  var g = svg.selectAll("#pie").selectAll(".arc") */ })
+
+	   
+		LABO.selectAll("rect")	
+		  .data(function(d) { return d.amount; })
+		  .enter().append("rect")
+		  .attr("width", x.rangeBand()) // attribution largeur stack
+		  .attr("y", function(d) { return y(d.y1); }) // attribution position Y-axis
+		  .attr("height", function(d) { return y(d.y0) - y(d.y1); }) // hauteur stack
+		  .style("fill", function(d) { return color(d.name); }) // Couleur Stack
+		 .attr("stroke", "#00F") // Bordure stack
+		 .attr("data-somme",function(d){return d.y1  }) // attribut de donnée
+		 .attr("data-spe",function(d){return d.name;  }) // attribut de donnée
+		// .attr("data-pos",function(d){ return this.parentNode})
+		 .attr("stroke-width", 2) // epaisseur bordure
+		 .attr("stroke-opacity",0) // visibilité bordure
+		 .on("mouseout", function(d,i) { // Eventhandler mouseout
+				d3.select(this.parentNode.appendChild(this)).transition().duration(300)
+				.style({'stroke-opacity':0,'stroke':'#00F'});
+		})
+		.on("mouseover", function(d,i) { StackBars_DetailInfo(d,i,this); })
+
+	};
+	
+	
+
+  
+	function PieOnTheFly(d,i,parent){ // onmouseover event handler for stackbars
+	 
+	
+		/* Empty pie container for if a pie already exists */
+		   svg.selectAll("#pie")
+		   .selectAll(".arc")
+		   .remove()
+		   
+		/* Get pie data index position */
+			var i = d3.select(parent.parentNode.appendChild(parent)).attr('data-pos');
+		
+		/* Generate related pie */
+			
+		g = svg.selectAll("#pie")
+				.selectAll(".arc")
+				.remove()
+				.data(pie(mydata[i]))
+				.enter().append("g")
+				.attr("class", "arc")
+				.attr("data-somme",function(d){return d.data.montant;})
+				.on("mouseover",function(d,i){ /* onmouseover event handler for pie */ })
+		
+		
+		g.append("path") 
+		.attr("data-somme",function(d){return d.data.montant;})
+		.attr("d", arc)
+		.style("fill", function(d) { return color(d.data.specialite); })
+		//.attr("stroke-width",3)
+		//.attr("stroke", "#00F") // Bordure stack
+	  
+	}
+	
+	
+	function populate_treemap(){
+		
+			node = div.datum(specialites).selectAll('.node')
+			.data(treemap.nodes)
+			.enter().append('div')
+			.attr('class', 'node')
+			.call(position)
+			.style("background", function(d) { return d.children ? color(d.name) : null; })
+			.text(function(d) { return d.children ? null : d.name; });
+		 
+		
+		} 
+	
+	/* Render Info */
+	
+	function TextInfo(){
+		
+		var specialite = svg.append("g")
+						.append("text")
+						.attr("class", "TextInfo")
+						.attr("id","SB_spec")
+						.attr("x",(width-40))
+						.attr("y", 6)
+					    .attr("dy", ".71em")
+						.style("font-size","24px	")
+						.text("Spécialité")
+	
+
+
+		var somme = svg.append("g")
+						.append("text")
+						.attr("class", "TextInfo")
+						.attr("id","SB_somme")
+						.attr("x",(width-40))
+						.attr("y", 32)
+						.attr("dy", ".71em")
+						.style("font-size","16px")
+						.text("Somme en euros")
+		return {'specialite':specialite,'somme':somme}
+  }
+	/** Treemap Generation **/ 
+	
+	
+	/*** END OF RENDERING FUNCTIONS ***/
+	
+	
+	/*** POSITIONING, MARGINS & AXIS FUNCTIONS ***/
+	
+	/* position stackbars */
+	
+	function position() { 
+
+		this.style("left", function(d) { return d.x + "px"; })
+    	.style("top", function(d) { return d.y + "px"; })
+    	.style("width", function(d) { return Math.max(0, d.dx - 1) + "px"; })
+    	.style("height", function(d) { return Math.max(0, d.dy - 1) + "px"; });
+	
+	}
+	
+	/* margins */
+	
+	function margins(){
+	 
+			margin = {top: 20, right: 20, bottom: 30, left: 40},
+			width = 960 - margin.left - margin.right,
+			height = 600 - margin.top - margin.bottom;
+	}
+
+	/* Axis for stackbars */
+	
+	function AxisScale(){
+	
+		x = d3.scale.ordinal()
+	    .rangeRoundBands([0, width], .2);
+
+		y = d3.scale.linear()
+	    .rangeRound([height-80, 0]);
+		
+		xAxis = d3.svg.axis()
+    	.scale(x)
+    	.orient("bottom")
+
+		yAxis = d3.svg.axis()
+	    .scale(y)
+	    .orient("left")
+	    .tickFormat(d3.format(".2s"));
+	
+		
+	}
+	
+	/* Treemap */
+	
+		
+		
+		
+	/*** END OF POSITIONING, MARGINS & AXIS FUNCTIONS ***/
+	
+	/*** EVENTS & INTERACTIONS FUNCTIONS ***/
+	
+	
+	/** Display hovered details info for stackbars **/
+	
+	function StackBars_DetailInfo(d,i,parent){
+
+	 g = svg.selectAll(".arc")
+		.data(pie(mydata))
+		.enter().append("g");
+		
+		svg.select("#SB_spec") // affichage specialité
+			.text(d3.select(parent.parentNode.appendChild(parent)).attr('data-spe'));
+		
+		svg.selectAll("#SB_somme") // affichage somme
+			 .text(d3.select(parent.parentNode.appendChild(parent)).attr('data-somme') + " euros")
+			
+		d3.select(parent.parentNode.appendChild(parent)).transition().duration(300)
+			.style({'stroke-opacity':2,'stroke':'#F00'});
+	}
+	
+	
+	/*** END OF EVENTS & INTERACTIONS FUNCTIONS ***/
+	
+	function Layouts(){
+	
+		pie = d3.layout.pie()
+		.sort(null)
+		.value(function(d) { return d.montant; });
+		
+		arc = d3.svg.arc()
+		.outerRadius(110)
+		.innerRadius(50);
+	  
+	
+		treemap = d3.layout.treemap()
+		.size([(width - (margin.left + margin.right)), height]) 
+		.sticky(true)
+		.value(function(d) { return d.size; }); 
+	
+	return {'pie':pie,'arc':arc,'treemap':treemap}
+	}
+
+	function Containers(){
+	
+	svg = d3.select(Stack_Location).append("svg")
+			.attr('id','stackbars')
+			.attr("width", width + margin.left + margin.right)
+			.attr("height", height + margin.top + margin.bottom)
+			.append("g")
+			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+			
+	pie_chart = svg
+		.append("g")
+		.attr("id","pie")
+		.attr("width", 220)
+		.attr("height", 220)
+		.attr('transform',"translate("+(width - 220) +",220)");
+		
+	div = d3.select("body").select(Treemap_Location).append("div")
+			.attr("id","treemap")
+			.style("position", "relative")
+			.style("width", (width - (margin.left + margin.right)) + "px")
+			.style("height", (height + margin.top + margin.bottom) + "px")
+			.style("left", margin.left + "px")
+			.style("top", margin.top + "px");
+	
+	return {'stackbars':svg,'pie':pie_chart,'treemap':div}
+	}
+	</script>
+	</body>
