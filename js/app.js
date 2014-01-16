@@ -22,6 +22,24 @@ sunshine.nestData = function(dimensions, attr, data) {
         .entries(data);
 };
 
+// Experiment filter function on nestedData
+sunshine.filterLeavesByQ = function(nestedData, q) {
+    // TODO: use a generic getter
+    var filteredNestedData = [];
+    _.each(nestedData, function(d) {
+        var data = {};
+        data.key = d.key;
+        var total = d3.sum(d.values, function(d) {
+            return d.values.sum;
+        });
+        data.values = d.values.filter(function(d) {
+            return d.values.sum/total > q;
+        });
+        filteredNestedData.push(data);
+    });
+    return filteredNestedData
+};
+
 // Set default accessor for sunshine treemap
 sunshine.treemap = function() {
     return d3.layout.treemap().children(function(d) { return d.values; });

@@ -55,9 +55,9 @@ form {
   d3.json("../data/sunshine.origin-labo.refined.json", function(error, data) {
     var root = {
       key: 'sunshine',
-      values: sunshine.nestData(['ORIGIN', 'LABO'], 'DECL_AVANT_MONTANT', data)
-    }
-    console.log(sunshine.nestData(['ORIGIN', 'LABO'], 'DECL_AVANT_MONTANT', data));
+      values: sunshine.filterLeavesByQ(sunshine.nestData(['ORIGIN', 'LABO'], 'DECL_AVANT_MONTANT', data), 0.01)
+    };
+    console.log(sunshine.filterLeavesByQ(sunshine.nestData(['ORIGIN', 'LABO'], 'DECL_AVANT_MONTANT', data), 0.05));
     var node = div.datum(root).selectAll(".node")
         .data(treemap.nodes)
       .enter().append("div")
