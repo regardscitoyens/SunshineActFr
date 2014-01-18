@@ -70,7 +70,7 @@ svg {
       document.body.appendChild(tooltip.node());
       var w = 960,
           h = 500,
-          p = [20, 70, 30, 20],
+          p = [20, 70, 50, 20],
           x = d3.scale.ordinal().rangeRoundBands([0, w - p[1] - p[3]]),
           y = d3.scale.linear().range([0, h - p[0] - p[2]]),
           z = d3.scale.ordinal().range(["#d62728", "#ff7f0e", "#7f7f7f", "#2ca02c"])
@@ -161,11 +161,18 @@ svg {
           var label = g.selectAll("text")
             .data(x.domain())
             .enter().append("svg:text")
-            .attr("x", function(d) { return x(d) + x.rangeBand() / 2; })
-            .attr("y", 6)
+            .attr('transform', function(d) {
+                return 'translate(' + x(d) + ',' + 15 + ') rotate(-0)'
+            })
             .attr("text-anchor", "middle")
             .attr("dy", ".71em")
-            .text(function(d, i) {return strBins[i];});
+            .text(function(d, i) {
+                if (i+1 == strBins.length) {
+                  return strBins[i].split(',')[0];
+                }
+                return strBins[i].split(',')[0];
+
+            });
 
           var rule = g.selectAll("g.rule")
             .data(y.ticks(5))
