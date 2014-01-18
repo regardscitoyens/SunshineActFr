@@ -1,11 +1,11 @@
-/* Dependency: underscore.js and d3.js */
+/* Dependency: d3.js */
 
 var sunshine = {};
 
 // Return a hierarchical object set by dimensions and attr value from an array data
 sunshine.nestData = function(dimensions, attr, data) {
     var nested_data = d3.nest();
-    _.each(dimensions, function(dim) {
+    dimensions.forEach(function(dim) {
         nested_data.key(function(d) {
             return d[dim];
         });
@@ -26,10 +26,9 @@ sunshine.nestData = function(dimensions, attr, data) {
 sunshine.filterLeavesByQ = function(nestedData, q) {
     // TODO: use a generic getter
     var filteredNestedData = [];
-    _.each(nestedData, function(d) {
-        var data = {};
-        data.key = d.key;
-        var total = d3.sum(d.values, function(d) {
+    nestedData.forEach(function(d) {
+        var data = {key: d.key};
+        var total = d3.sum(d.values, function(d) {
             return d.values.sum;
         });
         data.values = d.values.filter(function(d) {
@@ -46,11 +45,10 @@ sunshine.treemap = function() {
 };
 
 
-function position() { 
-
-		this.style("left", function(d) { return d.x + "px"; })
-    	.style("top", function(d) { return d.y + "px"; })
-    	.style("width", function(d) { return Math.max(0, d.dx - 1) + "px"; })
-    	.style("height", function(d) { return Math.max(0, d.dy - 1) + "px"; });
-	
-	}
+// XXX: what's this ?
+function position() {
+    this.style("left", function(d) { return d.x + "px"; })
+        .style("top", function(d) { return d.y + "px"; })
+        .style("width", function(d) { return Math.max(0, d.dx - 1) + "px"; })
+        .style("height", function(d) { return Math.max(0, d.dy - 1) + "px"; });
+}
