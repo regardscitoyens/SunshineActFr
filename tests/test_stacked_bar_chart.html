@@ -2,7 +2,7 @@
 <html>
   <meta charset="utf-8">
   <head>
-    <title>Crimean War</title>
+    <title>Stacked bars</title>
     <style type="text/css">
 svg {
   width: 960px;
@@ -10,6 +10,15 @@ svg {
   border: solid 1px #ccc;
   font: 10px sans-serif;
   shape-rendering: crispEdges;
+  background-color: WhiteSmoke;
+}
+
+.origin-bar {
+  opacity: 0.8;
+  stroke-width: 1;
+}
+.origin-bar:hover {
+  opacity: 1;
 }
 
 .popover {
@@ -68,20 +77,20 @@ svg {
         .attr("class", "popover")
         .style("display", 'none');
       document.body.appendChild(tooltip.node());
-      var w = 960,
-          h = 500,
-          p = [20, 70, 50, 20],
-          x = d3.scale.ordinal().rangeRoundBands([0, w - p[1] - p[3]]),
-          y = d3.scale.linear().range([0, h - p[0] - p[2]]),
+      var margin = {top: 40, right: 70, bottom: 20, left: 10},
+          w = 960 - margin.left - margin.right,
+          h = 500 - margin.top - margin.bottom,
+          x = d3.scale.ordinal().rangeRoundBands([0, w]),
+          y = d3.scale.linear().range([h, 0]),
           z = d3.scale.ordinal().range(["#d62728", "#ff7f0e", "#7f7f7f", "#2ca02c"])
             .domain(["Médecin", "Interne", "Dentiste", "Pharmacien"]),
           format = d3.time.format("%b");
 
       var svg = d3.select("body").append("svg:svg")
-          .attr("width", w)
-          .attr("height", h)
+          .attr("width", w + margin.left + margin.right)
+          .attr("height", h + margin.top + margin.bottom)
       var g = svg.append("svg:g")
-          .attr("transform", "translate(" + p[3] + "," + (h - p[2]) + ")");
+          .attr("transform", "translate(" + margin.left + "," + margin.left + ")");
 
       var origins, bins, strBins, stackedOrigins, layout;
 
@@ -140,9 +149,10 @@ svg {
               })})
             .enter()
             .append("rect")
+            .attr("class", "origin-bar")
             .attr("x", function(d) { return x(d.x); })
-            .attr("y", function(d) { return -y(d.y0) - y(d.y); })
-            .attr("height", function(d) { return y(d.y); })
+            .attr("y", h)
+            .attr("height", 0)
             .attr("width", x.rangeBand())
             .on("mouseover", function(d, i) {
                 var y = Math.round(d.y/1e3);
@@ -158,11 +168,18 @@ svg {
               tooltip.style("display", "none");
             });
 
+          // play with transition
+          rect.transition()
+            .delay(function(d, i) { return i * 10; })
+            .attr("y", function(d) { return y(d.y0 + d.y); })
+            .attr("height", function(d) { return y(d.y0) - y(d.y0 + d.y); });
+
+          
           var label = g.selectAll("text")
             .data(x.domain())
             .enter().append("svg:text")
             .attr('transform', function(d) {
-                return 'translate(' + x(d) + ',' + 15 + ') rotate(-0)'
+                return 'translate(' + x(d) + ',' + (h + 15) + ') rotate(-0)'
             })
             .attr("text-anchor", "middle")
             .attr("dy", ".71em")
@@ -172,19 +189,18 @@ svg {
                 }
                 return strBins[i].split(',')[0];
 
-            });
-
+                });
           var rule = g.selectAll("g.rule")
             .data(y.ticks(5))
             .enter().append("svg:g")
             .attr("class", "rule")
-            .attr("transform", function(d) { return "translate(0," + -y(d) + ")"; });
+            .attr("transform", function(d) { return "translate(0," + y(d) + ")"; });
           rule.append("svg:line")
-            .attr("x2", w - p[1] - p[3])
+            .attr("x2", w)
             .style("stroke", function(d) { return d ? "#fff" : "#000"; })
             .style("stroke-opacity", function(d) { return d ? .7 : null; });
           rule.append("svg:text")
-            .attr("x", w - p[1] - p[3] + 6)
+            .attr("x", w + 6)
             .attr("dy", ".35em")
             .text(d3.format(",d"));
 
