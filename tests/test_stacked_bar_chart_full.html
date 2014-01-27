@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <head>
+    <title>Stacked bars</title>
+    <style type="text/css">
+svg {
+  width: 960px;
+  height: 500px;
+  border: solid 1px #ccc;
+  font: 10px sans-serif;
+  shape-rendering: crispEdges;
+  background-color: WhiteSmoke;
+}
+
+.origin-bar {
+  opacity: 0.8;
+  stroke-width: 1;
+}
+.origin-bar:hover {
+  opacity: 1;
+}
+
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1010;
+  display: none;
+  max-width: 276px;
+  padding: 1px;
+  text-align: left;
+  white-space: normal;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+.popover.top {
+  margin-top: -10px;
+}
+.popover.right {
+  margin-left: 10px;
+}
+.popover.bottom {
+  margin-top: 10px;
+}
+.popover.left {
+  margin-left: -10px;
+}
+.popover-title {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 5px 5px 0 0;
+}
+.popover-content {
+  padding: 9px 14px;
+}
+.popover
+    </style>
+  </head>
+  <body>
+    <script src="../js/underscore.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="../js/app.js"></script> 
+    <script type="text/javascript">
+      var tooltip = d3.select(document.createElement('div'))
+        .append("div")
+        .attr("class", "popover")
+        .style("display", 'none');
+      document.body.appendChild(tooltip.node());
+      var margin = {top: 40, right: 70, bottom: 20, left: 10},
+          w = 960 - margin.left - margin.right,
+          h = 500 - margin.top - margin.bottom,
+          x = d3.scale.ordinal().rangeRoundBands([0, w]),
+          y = d3.scale.linear().range([h, 0]),
+          z = d3.scale.ordinal().range(["#d62728", "#ff7f0e", "#7f7f7f", "#2ca02c"])
+            .domain(["Médecin", "Interne", "Dentiste", "Pharmacien"]),
+          format = d3.time.format("%b");
+
+      var svg = d3.select("body").append("svg:svg")
+          .attr("width", w + margin.left + margin.right)
+          .attr("height", h + margin.top + margin.bottom)
+      var g = svg.append("svg:g")
+          .attr("transform", "translate(" + margin.left + "," + margin.left + ")");
+
+      var origins, bins, strBins, stackedOrigins, layout;
+
+      d3.json("../data/sunshine.origin-labo-bins.json", function(error, data) {
+          origins = sunshine.nestData(['ORIGIN', 'DECL_AVANT_MONTANT_BIN_NAME'],
+            'DECL_AVANT_MONTANT', data);
+
+          bins = d3.set(data.map(function(d) {
+            return d.DECL_AVANT_MONTANT_BIN_NAME;
+            }))
+            .values()
+            .map(function(d) {
+              return d.split(',').map(function(d) {return +d});
+            })
+            .sort(function(d1, d2) {
+              return d1[0] < d2[0] ? -1 : d1[0] > d2[0] ? 1 : 0;
+              });
+          strBins = bins.map(function(d) {return "" + d});
+
+          layout = d3.layout.stack().order("inside-out")
+		  .offset('expand')
+            .values(function(d) {
+              return d.values;
+            });
+          stackedOrigins = layout(origins.map(function(d) {
+              var xmap = {};
+              d.values.forEach(function(d) {
+                xmap[d.key] = d.values.sum;
+              });
+              return {name: d.key, values:strBins.map(function(d, i) {
+                if (!xmap[d]) {
+                  return {x: i, y: 0};
+                  } else {
+                  return {x: i, y: xmap[d]};
+                }
+                })};
+            }));
+
+          x.domain(d3.range(0, bins.length));
+          y.domain([0, d3.max(stackedOrigins.map(function(d) {
+            return d3.max(d.values, function(d) {
+              return d.y0 + d.y;
+              });
+            }))
+          ]);
+
+          var origin = g.selectAll("g.origin")
+            .data(stackedOrigins)
+            .enter().append("svg:g")
+            .attr("class", "origin")
+            .style("fill", function(d) { return z(d.name); })
+            .style("stroke", function(d) { return d3.rgb(z(d.name)).darker(); });
+
+          var rect = origin.selectAll("rect")
+            .data(function(d, i) {return d.values.map(function(value) {
+                return {i: i, y: value.y, y0: value.y0, name: d.name, x: value.x}
+              })})
+            .enter()
+            .append("rect")
+            .attr("class", "origin-bar")
+            .attr("x", function(d) { return x(d.x); })
+            .attr("y", h)
+            .attr("height", 0)
+            .attr("width", x.rangeBand())
+            .on("mouseover", function(d, i) {
+                var y = Math.round(d.y/1e3);
+              var text = "<div class='popover-content'> <b>" +
+                    d.name + " : " + d3.format(",d")(y*1e3) + " €"
+                "</b></div>";
+              tooltip.html(text);
+              tooltip.style("left", d3.event.pageX + 10 + "px");
+              tooltip.style("top", d3.event.pageY - 50 + "px");
+              tooltip.style("display", "block")
+            })
+            .on("mouseout", function() {
+              tooltip.style("display", "none");
+            });
+
+          // play with transition
+          rect.transition()
+            .delay(function(d, i) { return i * 10; })
+            .attr("y", function(d) { return y(d.y0 + d.y); })
+            .attr("height", function(d) { return y(d.y0) - y(d.y0 + d.y); });
+
+          
+          var label = g.selectAll("text")
+            .data(x.domain())
+            .enter().append("svg:text")
+            .attr('transform', function(d) {
+                return 'translate(' + x(d) + ',' + (h + 15) + ') rotate(-0)'
+            })
+            .attr("text-anchor", "middle")
+            .attr("dy", ".71em")
+            .text(function(d, i) {
+                if (i+1 == strBins.length) {
+                  return strBins[i].split(',')[0];
+                }
+                return strBins[i].split(',')[0];
+
+                });
+          var rule = g.selectAll("g.rule")
+            .data(y.ticks(5))
+            .enter().append("svg:g")
+            .attr("class", "rule")
+            .attr("transform", function(d) { return "translate(0," + y(d) + ")"; });
+          rule.append("svg:line")
+            .attr("x2", w)
+            .style("stroke", function(d) { return d ? "#fff" : "#000"; })
+            .style("stroke-opacity", function(d) { return d ? .7 : null; });
+          rule.append("svg:text")
+            .attr("x", w + 6)
+            .attr("dy", ".35em")
+            .text(d3.format(",d"));
+
+        var legend = svg.selectAll(".legend")
+              .data(z.domain())
+            .enter().append("g")
+              .attr("class", "legend")
+              .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+          legend.append("rect")
+              .attr("x", 5)
+              .attr("y", 5)
+              .attr("width", 18)
+              .attr("height", 18)
+              .style("fill", z);
+
+          legend.append("text")
+              .attr("x", 25)
+              .attr("y", 12)
+              .attr("dy", ".50em")
+              .text(function(d) { return d; });
+              });
+    </script>
+  </body>
+</html>
